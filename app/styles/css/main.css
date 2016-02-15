@@ -10433,6 +10433,18 @@ h6 {
   background: #034EA0;
   width: 100%;
   height: 35px;
+  text-transform: initial;
+}
+.headerinfo a {
+  line-height: 35px;
+  display: inline-block;
+  border-right: 1px solid #006699;
+  padding: 0 20px;
+  font-family: 'Lato', sans-serif;
+}
+.headerinfo ul li {
+  list-style: none;
+  display: inline-block;
 }
 body.page-hotelList .hotel-actions {
   background: #034EA0;
