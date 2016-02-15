@@ -1,0 +1,79 @@
+<div class="inner-wrap">
+   <div class="container hotelsingles">
+      <article class="hotel-result single">
+         <a>
+            <div class="row">
+               <div class="col-xs-12 col-sm-3 hotel-result-image">
+                  <div data-cover="assets/img/{{image}}" data-cover-size="sm" class="coverImage"></div>
+               </div>
+               <div class="col-xs-12 col-sm-7 hotel-result-content">
+                  <header class="col-xs-12 col-sm-12 col-md-12 hotel-result-description">
+                     <div class="results-centered">
+                        <h5 class="hotel-type-name">{{hotelBrandName}} {{hotelName}}</h5>
+                        <div class="hotel-type-description">
+                           <p>{{field_address.thoroughfare}}, {{field_address.postal_code}} </p>
+                           <p>{{field_address.locality}}, {{field_address.administrative_area}}</p>
+                           <p>{{field_address.phone_number}}</p>
+                        </div>
+                     </div>
+                  </header>
+                  <section class="col-xs-6 col-sm-8 col-md-8 ">
+                     <div class="amount value"><i class="fa fa-map-marker"></i> {{miles}} from Downtown</div>
+                  </section>
+                  <section class="col-xs-6 col-sm-4 col-md-4">
+                     <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=586&amp;locationId=2042562&amp;lang=en_US&amp;border=false&amp;shadow=false&amp;display_version=2"></script>
+                  </section>
+               </div>
+               <div class="col-xs-12 col-sm-2 pricecont">
+                  <div class="results-centered">
+                     <div class="hotel-result-price-xs">
+                        <div class="amount price">From <span>{{field_price}}</span></div>
+                        <div class="per-night">Per Night</div>
+                     </div>
+                     <span id="selectHotel" class="btn btn-primary btn-block">Book Now</span>
+                  </div>
+               </div>
+            </div>
+         </a>
+      </article>
+      <article class="horizontal-promotion">
+         <img src="assets/img/promotions/horizontal1.jpg" />
+      </article>
+      <!--<article class="hotel-result single">
+         <a>
+            <div class="row">
+               <div class="col-xs-12 col-sm-3 hotel-result-image">
+                  <div data-cover="assets/img/{{image}}" data-cover-size="sm" class="coverImage"></div>
+               </div>
+               <div class="col-xs-12 col-sm-7 hotel-result-content">
+                  <header class="col-xs-12 col-sm-12 col-md-12 hotel-result-description">
+                     <div class="results-centered">
+                        <h5 class="hotel-type-name">{{hotelBrandName}} {{hotelName}}</h5>
+                        <div class="hotel-type-description">
+                           <p>{{field_address.thoroughfare}}, {{field_address.postal_code}} </p>
+                           <p>{{field_address.locality}}, {{field_address.administrative_area}}</p>
+                           <p>{{field_address.phone_number}}</p>
+                        </div>
+                     </div>
+                  </header>
+                  <section class="col-xs-6 col-sm-8 col-md-8 ">
+                     <div class="amount value">{{miles}} from Downtown</div>
+                  </section>
+                  <section class="col-xs-6 col-sm-4 col-md-4">
+                     <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=586&amp;locationId=2042562&amp;lang=en_US&amp;border=false&amp;shadow=false&amp;display_version=2"></script>
+                  </section>
+               </div>
+               <div class="col-xs-12 col-sm-2 pricecont">
+                  <div class="results-centered">
+                     <div class="hotel-result-price-xs">
+                        <div class="amount price">From USD ${{price}}</div>
+                        <div class="per-night">Per Night</div>
+                     </div>
+                     <span id="selectHotel" class="btn btn-primary btn-block">Book Now</span>
+                  </div>
+               </div>
+            </div>
+         </a>
+      </article>-->
+   </div>
+</div>
