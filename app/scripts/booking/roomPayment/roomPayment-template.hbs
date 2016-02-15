@@ -1,4 +1,4 @@
-<div class="loggedin welcomemsg container-fluid">
+<div class="loggedin welcomemsg container-fluid hidden" id="returnGuest">
 	<div class="container">
 		<h1>Welcome Back Curt!</h1>
 		<p>Based on your previous stay, we’ve selected the options below we think you’ll like.</p>
@@ -9,7 +9,8 @@
 <div class="container">
 	<div class="panel-group row" id="accordion" role="tablist" aria-multiselectable="true">
 	    {{>typeRoom}}
-	    {{>typeBed}}
+	    
+	    {{>rewards}}
 	    {{>guestInformation}}
 	    {{>payment}}
 	    {{>reviewBook}}    

@@ -86,7 +86,7 @@
             });
         },
         waypointNav: function () {
-            waypoints = new Waypoint({
+            /*waypoints = new Waypoint({
                 element: document.getElementById('searchbar'),
                 handler: function (direction) {
                     if (direction === 'down') {
@@ -107,7 +107,7 @@
                     }
                 },
                 offset: '30%'
-            });
+            });*/
         },
         disabledWaypointNav: function () {
             if (waypoints) {
