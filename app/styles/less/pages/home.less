@@ -4,7 +4,10 @@ h1,h2,h3,h4,h5,h6{
 #home-search
 {
 	position: relative;
-	height: 644px;
+	@media screen and (min-width:@screen-sm-min) {
+			height: 644px;
+		}
+	
 	.container
 	{
 		position: relative;
@@ -330,7 +333,9 @@ body.page-hotelList, .page-hotelInfo{
     text-align: center;
     top: 200px;*/
     position: relative;
-    height: 644px;
+    @media screen and (min-width:@screen-sm-min) {
+			height: 644px;
+		}
     z-index: 1;
 	    h1{ 
 	    	color:#fff;
@@ -468,4 +473,53 @@ body.page-hotelList, .page-hotelInfo{
 	.btn.active{
 		background:#005AB2;
 	}
+}
+
+
+@media screen and (max-width:@screen-md-min) {
+	#appContainer{
+		.headerinfo{
+			font-size: 12px;
+			a{
+				padding: 0px;
+			}
+			.pull-right{
+				margin-left: 0px;
+				padding:0px
+
+			}
+		}
+		.navbar-toggle{
+			position: absolute;
+			right: 0px;
+		}
+		#content{
+			padding-top: 130px;
+		}
+		#home-search{
+
+	
+			h1{
+				width: 100%;
+				font-size: 2em;
+				display: none;
+			}
+			#owl-demo .item {
+				video{
+					position: relative;
+
+				}
+			}
+			#searchbar{
+				position: static;
+				height: auto;
+				padding: 0;
+			}
+		}
+		.popular-destinations{
+			padding: 0 15px;
+		}
+	}
+	
+
 }

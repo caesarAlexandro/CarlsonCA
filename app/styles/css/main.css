@@ -9238,6 +9238,12 @@ nav#menu button,
 nav#menu .navbar-toggle {
   color: #fff !important;
 }
+nav#menu .navbar-nav {
+  margin-top: 10px;
+}
+nav#menu .navbar-nav li a {
+  padding: 10px 15px;
+}
 .page-header {
   padding: 0;
   margin-bottom: 0px;
@@ -9386,7 +9392,17 @@ body.page-hotelInfo .page-header .main-wrapper {
   }
 }
 .page-header-cta {
-  width: 210px;
+  width: 240px;
+}
+.page-header-cta .book-now-button {
+  padding: 0px;
+}
+.page-header-cta .book-now-button a {
+  width: 100%;
+  border: 0px;
+}
+.page-header-cta .book-now-price {
+  padding: 0px;
 }
 .page-header-body h5 {
   background: #034EA0;
@@ -10063,9 +10079,6 @@ fieldset[disabled] .btn-action.focus {
   font-size: 16px;
   line-height: 85px;
 }
-.navbar-inverse .pull-right {
-  margin-top: 0px !important;
-}
 .navbar-toggle {
   float: left;
   margin: 0;
@@ -10089,9 +10102,6 @@ fieldset[disabled] .btn-action.focus {
 .page-hotelList .navbar-inverse i.fa-navicon {
   font-size: 16px;
   line-height: 85px;
-}
-.page-hotelList .navbar-inverse .pull-right {
-  margin-top: 0px !important;
 }
 #footer {
   background: #333;
@@ -10215,7 +10225,11 @@ h6 {
 }
 #home-search {
   position: relative;
-  height: 644px;
+}
+@media screen and (min-width: 768px) {
+  #home-search {
+    height: 644px;
+  }
 }
 #home-search .container {
   position: relative;
@@ -10496,8 +10510,12 @@ body.page-hotelList #content,
     text-align: center;
     top: 200px;*/
   position: relative;
-  height: 644px;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  #owl-demo .item > div {
+    height: 644px;
+  }
 }
 #owl-demo .item > div h1 {
   color: #fff;
@@ -10605,6 +10623,41 @@ body.page-hotelList #content,
 }
 .changeviews .btn.active {
   background: #005AB2;
+}
+@media screen and (max-width: 992px) {
+  #appContainer .headerinfo {
+    font-size: 12px;
+  }
+  #appContainer .headerinfo a {
+    padding: 0px;
+  }
+  #appContainer .headerinfo .pull-right {
+    margin-left: 0px;
+    padding: 0px;
+  }
+  #appContainer .navbar-toggle {
+    position: absolute;
+    right: 0px;
+  }
+  #appContainer #content {
+    padding-top: 130px;
+  }
+  #appContainer #home-search h1 {
+    width: 100%;
+    font-size: 2em;
+    display: none;
+  }
+  #appContainer #home-search #owl-demo .item video {
+    position: relative;
+  }
+  #appContainer #home-search #searchbar {
+    position: static;
+    height: auto;
+    padding: 0;
+  }
+  #appContainer .popular-destinations {
+    padding: 0 15px;
+  }
 }
 .image-pane {
   height: 250px;
@@ -10777,29 +10830,54 @@ body.page-hotelList #content,
 	padding:.25em 1em;	
 	*/
 }
-body.page-hotelInfo footer {
-  display: none !important;
+body.page-hotelInfo #content-page {
+  background: #f2f2f2;
 }
-@media (max-width: 767px) {
-  body.page-hotelInfo footer {
-    display: block !important;
-  }
-  tablebody.page-hotelInfo footer {
-    display: table !important;
-  }
-  trbody.page-hotelInfo footer {
-    display: table-row !important;
-  }
-  thbody.page-hotelInfo footer,
-  tdbody.page-hotelInfo footer {
-    display: table-cell !important;
-  }
+body.page-hotelInfo .page-header-body {
+  bottom: 50px;
+}
+body.page-hotelInfo .page-header-cta {
+  bottom: 50px;
 }
 body.page-hotelInfo #modifySearch {
   height: 0px;
 }
-body.page-hotelInfo .hotel-info-top {
+body.page-hotelInfo .readmorebtn {
+  border: 1px solid #014290;
+  background: none;
+  padding: 10px 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+body.page-hotelInfo .hotel-info-top,
+body.page-hotelInfo .hotel-info-bottom {
   font-family: 'Lato', sans-serif;
+}
+body.page-hotelInfo .hotel-info-top p,
+body.page-hotelInfo .hotel-info-bottom p,
+body.page-hotelInfo .hotel-info-top ul,
+body.page-hotelInfo .hotel-info-bottom ul {
+  line-height: 175%;
+}
+body.page-hotelInfo .hotel-info-top .hotel-info-top-left p {
+  margin-bottom: 50px;
+}
+body.page-hotelInfo .hotel-info-top .hotel-info-top-right {
+  background: #fff;
+}
+body.page-hotelInfo .hotel-info-top .hotel-info-top-right > div {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 15px 0;
+}
+body.page-hotelInfo .hotel-info-top .hotel-info-top-right > div > span {
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+}
+body.page-hotelInfo .hotel-info-top .hotel-info-top-right .social i {
+  font-size: 2em;
+  color: #00448E;
+  margin-right: .5em;
 }
 body.page-hotelInfo .hotel-info-top h1,
 body.page-hotelInfo .hotel-info-top h2,
@@ -10818,18 +10896,33 @@ body.page-hotelInfo .hotel-info-top h4 {
 body.page-hotelInfo .hotel-info-top .infotop {
   background: #e9e9e9;
 }
-body.page-hotelInfo .hotel-info-top .infotop p {
-  line-height: 175%;
+body.page-hotelInfo .hotel-info-bottom {
+  background: #fff;
+}
+body.page-hotelInfo .hotel-info-bottom .hotel-info-bottom-left {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+body.page-hotelInfo .hotel-info-bottom .hotel-info-bottom-right {
+  padding: 0px;
+}
+body.page-hotelInfo .hotel-info-bottom .hotel-info-bottom-right img {
+  width: 100%;
 }
 body.page-hotelInfo .hotel-info-data {
   background: #034EA0;
   color: #fff;
+  padding: 15px;
 }
 body.page-hotelInfo #modifySearch {
   height: auto !important;
   margin-bottom: -85px;
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
+}
+body.page-hotelInfo #modifySearch > div {
+  background: #fff;
+  width: 970px;
 }
 body.page-hotelInfo .ataglance h5 {
   background: #9e9fa2;
@@ -10919,10 +11012,22 @@ body.page-hotelInfo .ataglance h5 ul {
   color: #0059b2;
   font-size: 45px;
 }
+.page-guestInfo .panel h4 strong {
+  line-height: 45px;
+}
+.page-guestInfo .rightpanel .list-group {
+  background: #CFECF5;
+}
+.page-guestInfo .rightpanel .list-group .list-group-item {
+  background: none;
+}
+.page-guestInfo .leftpanel .summary-reservation {
+  background: #F5F5F5;
+}
 .panel .panel-heading {
   background: #002855;
   color: #fff;
-  padding: 17px 20px;
+  padding: 0 20px;
 }
 .guarantee-section {
   background: #f0efed;
@@ -12609,7 +12714,11 @@ input[type=checkbox] + label:after {
   z-index: 1;
 }
 .hotel-description {
-  padding-top: 15px;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: -15%;
+  width: 33%;
 }
 .reviews {
   margin-top: 60px;
@@ -13358,6 +13467,11 @@ fieldset[disabled] .btn-price.focus {
 }
 .search-filter .sort-actions {
   padding: 0;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.search-filter .sort-actions .sort-price {
+  font-weight: 400;
 }
 .search-filter .sort-actions .btn:not(.active):not(.reverse) i {
   display: none;

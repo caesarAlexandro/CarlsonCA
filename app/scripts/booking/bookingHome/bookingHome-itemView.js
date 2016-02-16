@@ -86,7 +86,8 @@ define([
                 autoPlay: 3000, //Set AutoPlay to 3 seconds
                 items : 4,
                 itemsDesktop : [1199 , 3],
-                temsDesktopSmall : [979 , 3]
+                temsDesktopSmall : [979 , 3],
+                itemsMobile : [479,2]
             });
         },
         renderDatepicker: function ()
