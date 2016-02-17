@@ -474,7 +474,10 @@ body.page-hotelList, .page-hotelInfo{
 		background:#005AB2;
 	}
 }
-
+.form-control{
+	box-shadow: none;
+	border-color:#CCCCCC;
+}
 
 @media screen and (max-width:@screen-md-min) {
 	#appContainer{
@@ -492,6 +495,9 @@ body.page-hotelList, .page-hotelInfo{
 		.navbar-toggle{
 			position: absolute;
 			right: 0px;
+		}
+		.nav.navbar-nav.pull-right{
+			float:none !important;
 		}
 		#content{
 			padding-top: 130px;
@@ -520,6 +526,22 @@ body.page-hotelList, .page-hotelInfo{
 			padding: 0 15px;
 		}
 	}
-	
+	.page-guestInfo{
+		#content-page{
+			margin-top: 0px;
+		}
+	}
+	.page-hotelList{
+		.hotel-result{
+			.row{
+				div{
+					height: auto;
+				}
+				.hotel-result-image{
+					height: 230px;
+				}
+			}
+		}
+	}
 
 }

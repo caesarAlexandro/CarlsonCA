@@ -21,13 +21,14 @@ define([
             'blur #lastname':'validateLastName',
             'blur #email':'validateEmail',
             'blur #telephone': 'validatePhone',
-            'blur #zipcode': 'validateZipCode'
+            'blur #zipcode': 'validateZipCode',
+            'click .joinnow': 'openCarlsonClub'
         },
         initialize: function () {
         },
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
-        },
+        },       
         /**
          * @function validateFisrtName
          * @description Print true or false if  the $('#firstname') value match like a validate name

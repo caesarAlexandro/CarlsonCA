@@ -1,15 +1,17 @@
 <section class="ribbon ribbon-success">
-    <header class="ribbon-heading">
+
 
 
         <div class="container">
+
             <h4>
-				<i class="fa fa-check-circle icon-round icon-round-sm icon-inverse-success"></i> <span class="name">We’ve emailed your reservation details to </span> <strong class="email">{{email}}</strong>	
+				<i class="fa fa-check-circle-o icon-round icon-round-sm icon-inverse-success"></i> Thank you Curt!	
 			</h4>
+            <p>Confrimation Number: </p>
+            <p class="emailinfo"><span class="name">We’ve emailed your reservation details to </span> <strong class="email">{{email}}</strong></p>
         </div>
 
 
-    </header>
 
 </section>
 
@@ -17,7 +19,7 @@
     <div class="row">
         <div id="menu-bar" class="col-xs-12">
             <ul class="list-inline">
-                <li class="col-xs-6 col-sm-6 col-md-3">
+                <li class="col-xs-6 col-sm-6 col-md-4">
                     <a href="javascript:void(0)" class="btn btn-icon btn-block btn-primary">
                         <div class="wrapper">
                             <div class="icon-wrapper ">
@@ -31,7 +33,7 @@
                     </a>
                 </li>
 
-                <li class="col-xs-6 col-sm-6 col-md-3">
+                <li class="col-xs-6 col-sm-6 col-md-4">
                     <a href="javascript:void(0)" class="btn btn-icon btn-block btn-primary">
                         <div class="wrapper">
                             <div class="icon-wrapper ">
@@ -45,7 +47,7 @@
                     </a>
                 </li>
 
-                <li class="col-xs-6 col-sm-6 col-md-3">
+                <li class="col-xs-6 col-sm-6 col-md-4">
                     <a href="javascript:void(0)" class="btn btn-icon btn-block btn-primary">
                         <div class="wrapper">
                             <div class="icon-wrapper ">
@@ -59,7 +61,7 @@
                     </a>
                 </li>
 
-                <li class="col-xs-6 col-sm-6 col-md-3">
+                <!--<li class="col-xs-6 col-sm-6 col-md-3">
                     <a href="javascript:void(0)" class="btn btn-icon btn-block btn-default">
                         <div class="wrapper">
                             <div class="icon-wrapper ">
@@ -71,17 +73,17 @@
                             </div>
                         </div>
                     </a>
-                </li>
+                </li>-->
 
             </ul>
         </div>
     </div>
 
 
-    <section class="ribbon ribbon-default">
+    <!--<section class="ribbon ribbon-default ">
         <header class="ribbon-heading">
 
-            <h3>Your Reservation</h3>
+          
 
         </header>
 
@@ -149,24 +151,20 @@
 
         </section>
 
-    </section>
+    </section>-->
 
-    <div id="reservation-content">
-        <div class="row">
-            <div class="col-sm-3 col-xs-12" id="reservation-summary">
-                <section id="hotel-name">
-                    <h1>{{hotelBrandName}} {{hotelName}}</h1></section>
-
-
-                <section class="list-actions list-clean ">
-                    <ul class="list-group">
+    <div id="reservation-content" class="row">
+          <h3 class="">Your Reservation</h3>
+        
+            <div class="col-sm-7 col-xs-12" id="reservation-summary">
 
 
-
-                        <li href="javascript:void(0)" class="list-group-item  clearfix ">
+                <section class="roominfosection">
+                    <ul >
+                         <li href="javascript:void(0)" >
                             <div class="wrapper">
 
-                                <div class="content col-xs-12">
+                                <div class="content">
 
                                     <span class="supratitle">Check In</span>
 
@@ -176,58 +174,58 @@
 
                                 </div>
                             </div>
-
                         </li>
-
-                        <li href="javascript:void(0)" class="list-group-item  clearfix ">
+                        <li href="javascript:void(0)">
                             <div class="wrapper">
 
-                                <div class="content col-xs-12">
+                                <div class="content ">
                                     <span class="supratitle">Check Out - 6 nights</span>
                                     <span class="title">{{dateOut}} at 13:00 PM</span>
                                 </div>
                             </div>
 
                         </li>
-
-                        <li href="javascript:void(0)" class="list-group-item  clearfix ">
+                        <li href="javascript:void(0)" >
                             <div class="wrapper">
-
-                                <div class="content col-xs-12">
-
+                                <div class="content">
                                     <span class="supratitle">Rooms and Guests</span>
-
-
-
                                     <span class="title">{{numRooms}} room, {{numGuests}} guest</span>
-
                                 </div>
                             </div>
-
                         </li>
-
-                        <li href="javascript:void(0)" class="list-group-item  clearfix ">
+                        <li href="javascript:void(0)">
                             <div class="wrapper">
-
-                                <div class="content col-xs-12">
-
+                                <div class="content">
                                     <span class="supratitle">Confirmation Number</span>
-
-
-
                                     <span class="title">GPVCCK5</span>
-
                                 </div>
                             </div>
-
                         </li>
-
                     </ul>
+                </section>
+                <section id="guest_info_section" class="guest-info-section">
+                    <article>
+                        <p class="guest-title">Guest Information</p>
+                        <ul class="list-unstyled">
+                            <li>{{firstName}} {{lastName}}</li>
+                            <li>{{email}}</li>
+                            <li>{{phoneNumber}}</li>
+                            <li>Club Carlson </li>
+                            <li>#1234567</li>
+                        </ul>
+                        <div class="crib">Crib Requested
+                            <br/>
+
+                            <p>
+                                Special requests can not be guaranteed and are subject to availability.
+                            </p>
+                        </div>
+                    </article>
                 </section>
             </div>
             <div class="col-xs-12 col-sm-5 inverse" id="room-summary">
                 <div class="row">
-                    <section class="col-sm-6 summary-reservation">
+                    <section class="summary-reservation">
                         <div class="summary-reservations">
 
 
@@ -269,16 +267,41 @@
 
                             <footer>
                     </section>
-                    <section class="col-sm-6 summary-reservation">
-                        <div class="description-summary">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <p>Excepteur sint occaecat cupidatat non proident.</p>
-                            </div>
-                    </section>
+                     <section id="guarantee_section">
+
+                        <h5>Guarantee Policy</h5>
+                        <p>
+                            Your reservation is guaranteed to {{creditCardInfo.cardName}} ending in {{lastCardDigits}}.
+                        </p>
+                        <p>
+                            Your card will be billed ${{totalPrice}} by the hotel at time of booking.
+                        </p>
+
+                        <h5>Cancellation Policy</h5>
+                        <p>
+                            Cancel free until 6:00 PM hotel time on {{cancelFree}}.
+                        </p>
+                        <p>
+                            Late cancellations or no shows will be charged ${{totalPrice}}.
+                        </p>
+
+                        <h5 class="need-to-know">Need to Know</h5>
+
+                        <p>
+                            Photo ID and credit card required at check in.
+                        </p>
+                        <p>
+                            100% non-smoking rooms.
+                        </p>
+                        <p>
+                            A $50 departure fee will be charged when checking out prior to the departure date.
+                        </p>
+
+                    </article>
+                </section>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 map-pane">
+            <!--<div class="col-xs-12 col-sm-4 map-pane">
                 <section class="map-info">
                     <div class="row">
                         <section class="col-xs-12 map-address">
@@ -315,8 +338,8 @@
                         </section>
                     </div>
                 </section>
-            </div>
-        </div>
+            </div>-->
+        
     </div>
 
     <section class="map-image">
@@ -342,69 +365,4 @@
             </div>
         </div>
     </section>
-
-    <div class="bottom-section">
-
-        <section id="guest_info_section" class="col-md-5 guest-info-section">
-            <article>
-                <p class="guest-title">Guest Information</p>
-                <ul class="list-unstyled">
-                    <li>{{firstName}} {{lastName}}</li>
-                    <li>{{email}}</li>
-                    <li>{{phoneNumber}}</li>
-                    <li>Club Carlson </li>
-                    <li>#1234567</li>
-                </ul>
-                <div class="crib">Crib Requested
-                    <br/>
-
-                    <p>
-                        Special requests can not be guaranteed and are subject to availability.
-                    </p>
-                </div>
-            </article>
-        </section>
-        <div class="col-md-7 guarantee-section">
-            <div class="row">
-                <section id="guarantee_section" class="col-md-7 col-sm-6 clearfix">
-                    <article>
-
-                        <h5>Guarantee Policy</h5>
-                        <div>
-                            Your reservation is guaranteed to {{creditCardInfo.cardName}} ending in {{lastCardDigits}}.
-                        </div>
-                        <div>
-                            Your card will be billed ${{totalPrice}} by the hotel at time of booking.
-                        </div>
-
-                    </article>
-                    <article>
-                        <h5>Cancellation Policy</h5>
-                        <div>
-                            Cancel free until 6:00 PM hotel time on {{cancelFree}}.
-                        </div>
-                        <div>
-                            Late cancellations or no shows will be charged ${{totalPrice}}.
-                        </div>
-                    </article>
-                </section>
-                <section class="col-md-5 col-sm-6">
-                    <article>
-                        <h5 class="need-to-know">Need to Know</h5>
-
-                        <p>
-                            Photo ID and credit card required at check in.
-                        </p>
-                        <p>
-                            100% non-smoking rooms.
-                        </p>
-                        <p>
-                            A $50 departure fee will be charged when checking out prior to the departure date.
-                        </p>
-
-                    </article>
-                </section>
-            </div>
-        </div>
-    </div>
 </div>

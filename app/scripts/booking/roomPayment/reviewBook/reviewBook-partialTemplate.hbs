@@ -1,38 +1,68 @@
-<section class="panel panel-default">
+<section class="panel panel-default reviewpanel">
     <a class="panel-heading reservation-accordion collapsed" role="tab" id="headingFive" role="button" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
         <h4 class="panel-title">
               <span>5</span> <strong>REVIEW Reservation Details</strong>
-              <i class="fa chevron"></i>
+              <i class="fa fa-angle-down "></i>
             </h4>
     </a>
     <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
         <div class="panel-body">
-            <div class="row inverse leftpanel">
-                <div class="col-sm-7">
+            <div class="row inverse ">
+                <div class="col-sm-7 leftpanel">
                     {{>summaryReservation}}
                 </div>
-                <div class="col-sm-5 rightpanel">                    
-                    <!-- START review_pane.html -->
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <strong>Garanty Policy</strong>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Cancelation Policy</strong>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <strong>Taxes &amp; Fees</strong>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                        </li>
-                    </ul>
-                    <div class="col-sm-10 col-md-8 pull-right text-right">
+                <div class="col-sm-5 rightpanel">   <!-- START review_pane.html -->
+                    <section class="summary-reservation">
+                        <!--Subtotal and tax-->
+                        <section class="summary-reservation-calcs">
+                            <div {{!-- class="summary-reservation-subtotal clearfix" --}}>
+                                <h4>Room Cost</h4>
+                                <span class="summary-reservation-subtotal-title">Rate (1 Nights x {{price}}):</span>
+                                <span class="summary-reservation-subtotal-price pull-right">${{price}} USD</span>
+                            </div>
+                        </section>
+
+                        <section class="summary-reservation-calcs">
+                            <div class="summary-reservation-subtotal clearfix">
+                                <span class="summary-reservation-subtotal-title"><strong>Room Subtotal</strong></span>
+                                <span class="summary-reservation-subtotal-price pull-right">${{price}} USD</span>
+                            </div>
+                            <div class="summary-reservation-tax clearfix">
+                                <span class="summary-reservation-tax-title">Taxes &amp; Fees</span>
+                                <span class="summary-reservation-tax-price pull-right">{{taxPrice}} USD</span>
+                            </div>
+                            <div class="summary-reservation-tax clearfix">
+                                <span class="summary-reservation-tax-title">Estimated Aditional Fees</span>
+                                <span class="summary-reservation-tax-price pull-right">0.00 USD</span>
+                            </div>
+                        </section>
+
+                        <!--Total and labels with guarantee-->
+                        <section class="summary-reservation-total">
+                            <div class="clearfix">
+                                <span class="summary-total-label">Total for Stay</span>
+                                <span class="summary-total-price pull-right">${{totalPrice}} USD</span>
+                            </div>
+                            <div class="clearfix">
+                                <span class="summary-total-label">Estimated Cost</span>
+                                <span class="summary-total-price pull-right"> USD</span>
+                            </div>
+                            <div class="summary-reservation-additional" style="display: inline;">I have an e-cert</div>
+                            <div class="summary-reservation-promise text-right" style=" display: inline; float: right;">Best Rate Guaranteed</div>
+                            <div class="summary-reservation-terms text-right"></div>
+                            <div class="summary-reservation-additional"></div>
+                        </section>
+
+                    </section>
+                    <div class="col-sm-1">
+                        <input type="checkbox" style="display: block;">
+                    </div>
+                    <div class="col-sm-11 checkboxlabel">
                         <p class="small">
                             I acknowledge that I have read and agree to the <a href="javascript:void(0)">hotel policies</a>, <a href="javascript:void(0)">privacy policy</a> and <a href="javascript:void(0)">terms &amp; conditions</a> by completing this booking.
                         </p>
-                        <a class="btn btn-lg btn-primary btn-block btn-reservation" id="completeReservation">Complete My Reservation</a>
                     </div>
+                    <a class="btn btn-lg btn-primary btn-block btn-reservation" id="completeReservation" style="margin-top: 60px;">Complete My Reservation</a>
                     <!-- END review_pane.html -->
                 </div>
             </div>

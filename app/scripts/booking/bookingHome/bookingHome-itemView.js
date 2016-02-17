@@ -87,7 +87,7 @@ define([
                 items : 4,
                 itemsDesktop : [1199 , 3],
                 temsDesktopSmall : [979 , 3],
-                itemsMobile : [479,2]
+                itemsMobile : [479 , 2]
             });
         },
         renderDatepicker: function ()

@@ -41,36 +41,220 @@
 			padding: 15px 20px 20px 20px;
 		}
 	}
+	.ccrow{
+		background: #f5f5f5;
+		padding: 15px;
+		margin: 0px;
+	}
+	.radio-list-block{
+		padding: 0 8px;
+		&:first-child{
+			padding-left:0px;
+		}
+	}
 	.panel{
+		border: 0px;
+		box-shadow: initial;
 		h1,h2,h3,h4,h5{
 			font-family: @font-family-lato;
 			font-weight: 400;
 
 		}
-		.panel-heading h4{
-			font-family: @font-family-sans-serif;
-			text-transform: uppercase;
-		}
 		h4{
-			
+			text-transform: initial;
+			font-size: 22px;
 			span{
 				color:#0059b2;
 				font-size: 45px;
 			}
+		}
+
+		.panel-heading h4{
+			line-height: 50px;
+			height: 50px;
 			strong{
+				font-family: @font-family-sans-serif;
+				font-size: 18px;
+				position: relative;
+				font-weight: 400;
+				margin-left: 15px;
+				bottom: 8px;
 				line-height: 45px;
 			}
+			text-transform: uppercase;
 		}
-		
+				
 	}
-	.rightpanel .list-group{
-		background: #CFECF5;
-		.list-group-item{
-			background: none;
+	.rightpanel {
+		#completeReservation{
+			font-family: @font-family-sans-serif;
+		}
+		.checkboxlabel{
+			padding: 0px;
+		}
+		.summary-reservation{
+			background: #CFECF5;
+			font-size: 14px;
+			margin-bottom: 20px;
+			>section{
+				line-height: 35px;
+			}
+			span{
+				font-size: 14px !important;
+			}
+			.summary-reservation-calcs{
+				h4{
+					font-size: 18px;
+					margin-bottom: 20px;
+					color:#00448D;
+				}
+				&:first-child{
+					border-top: 0px;
+					h4{
+						margin-top: 0px;
+					}
+				}
+			}
+			.summary-total-label{
+				font-weight: bold;
+				color:#00448D;
+				font-size: 16px;
+			}
+			.pull-right{
+				font-weight: bold;
+			}
+		}
+		.small{
+			font-size: 12px;
 		}
 	}
-	.leftpanel .summary-reservation{
-		background: #F5F5F5;
+	.leftpanel {
+		.summary-reservation{
+			font-size: 14px;
+			background: #F5F5F5;
+			h4{
+				font-size: 18px;
+			}
+			header{
+				border-bottom: 1px solid #CCCCCC;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
+			}
+			>div{
+				padding-bottom: 15px;
+				//margin-bottom: 15px;
+				.topsection{
+					padding-bottom: 15px;
+					margin-bottom: 15px;
+					border-bottom: 1px solid #CCCCCC;
+				}
+			}
+			footer{
+				padding-top: 15px;
+				border-top: 1px solid #CCCCCC
+			}
+		}
+	}
+	.reviewpanel{
+
+	}
+	.guestinfopanel{
+		.returning{
+			font-size: 18px;
+
+		}
+		.panel-body{
+			//padding: 0px;
+		}
+		.row{
+			margin: 0px;
+		}
+		form{
+			margin: 0px;
+			overflow: hidden;
+			.form-group{
+				margin: 0px;
+				padding: 15px;
+				&:nth-child(odd){
+					background: #F5F5F5;
+				}
+			}
+		}
+		.col-sm-6 {
+			padding:0px;
+
+			
+
+			.form-inline{
+				overflow: hidden;
+				input,select{
+					width: 60%;
+					float: right;
+				}
+				label{
+					width: 35%;
+					margin: 0px;
+					font-weight: 400;
+					font-size: 14px;
+				}
+			}
+		}
+		.joinclub{
+			background: #CCEBF5;
+			color:#00448D;
+			position: relative;
+			.joinnow{
+				cursor: pointer;
+				font-weight: bold;
+			}
+			.form-group{
+				line-height: 30px;
+			    margin-bottom: 0;
+			    padding: 15px;
+
+			}
+			span,a{
+				line-height: 30px;
+			}
+			.triangle{
+				display: none;
+				  border-color: #cae8f2 transparent transparent;
+			    border-style: solid;
+			    border-width: 15px 12.5px 0;
+			    bottom: -15px;
+			    height: 0;
+			    position: absolute;
+			    right: 15%;
+			    width: 0;
+			}
+		}
+		.carlsonform{
+			display: none;
+			font-size: 14px;
+			background: #F5F5F5;
+			padding: 35px 30px;
+			margin: 25px 0;
+			header{
+				padding: 0 0 25px 0;
+				margin: 0 0 25px 0;
+				border-bottom: 1px solid #CCCCCC; 
+				position: relative;
+				.closeform{
+					position: absolute;
+					top: 0;
+					right: 0;
+					font-size: 30px;
+				}
+			}
+			p{
+				&:first-child{
+					margin-bottom: 70px;
+				}
+			}
+		}
+	}
+	.paymentpanel{
+		img{width: 100%;}
 	}
 }
 .panel{
@@ -79,4 +263,17 @@
 		color:#fff;
 		padding: 0 20px;
 	}
+	.panel-body{
+		border: 0px !important;
+	}
+
+	font-family: @font-family-lato;
 }
+.panel .panel-title .value {
+	    color: #fff;
+	    font-size: 20px;
+	    font-weight: 400;
+	    margin-left: 10px;
+	    position: relative;
+	    top: -9px;
+	}
