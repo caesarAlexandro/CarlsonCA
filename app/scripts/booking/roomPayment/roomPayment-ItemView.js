@@ -343,6 +343,8 @@
              if (signedIn.hasClass('hidden') == false) {
                  setTimeout(function() {
                      $('#returnGuest').removeClass('hidden');
+                     $('.rewardcurt').removeClass('hidden');
+                     $('.rewardadriana').addClass('hidden');
                  }, 100);
                  this.model.set({
                      'selectedRoom': 'Suite'

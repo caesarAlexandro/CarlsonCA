@@ -100,7 +100,19 @@
          <div class="container-fluid">
 <h4>What type of Bed?</h4>
             <section class="radio-list row" id="radio-list-bed">
+<article class="radio-list-block col-xs-6">
+                    <div class="radio-list-body">
+                        <input type="radio" id="radio-list-bed-1" class="check" name=bed {{#ifCond selectedBed 'King' }} checked="true" {{/ifCond}} />
 
+                        <label for="radio-list-bed-1" data-cover="assets/img/king-bed.jpg" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
+                            <div class="radio-list-overlay">
+                                <h4 class="title">1 King</h4>
+                                <div class="subtitle">Personal heaven</div>
+                                <div class="price" hidden>+$15</div>
+                            </div>
+                        </label>
+                    </div>
+                </article>
 
 
                 <article class="radio-list-block col-xs-6">
@@ -118,19 +130,7 @@
                     </div>
                 </article>
 
-                <article class="radio-list-block col-xs-6">
-                    <div class="radio-list-body">
-                        <input type="radio" id="radio-list-bed-1" class="check" name=bed {{#ifCond selectedBed 'King' }} checked="true" {{/ifCond}} />
-
-                        <label for="radio-list-bed-1" data-cover="assets/img/king-bed.jpg" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
-                            <div class="radio-list-overlay">
-                                <h4 class="title">1 King</h4>
-                                <div class="subtitle">Personal heaven</div>
-                                <div class="price" hidden>+$15</div>
-                            </div>
-                        </label>
-                    </div>
-                </article>
+                
 
             </section>
             
@@ -216,7 +216,7 @@
 
 
         </div>
-         <div class="container-fluid">
+         <!--<div class="container-fluid">
 <h4>What type of Addons?</h4>
             <section class="radio-list row" id="radio-list-bed">
 
@@ -263,6 +263,6 @@
             <a class="btn-lg btn-block btn btn-default details hidden" role="button" data-toggle="collapse" href=".collapse-bed" aria-expanded="true" aria-controls="collapse-bed">Details</a>
 
 
-        </div>
+        </div>-->
     </div>
 </section>

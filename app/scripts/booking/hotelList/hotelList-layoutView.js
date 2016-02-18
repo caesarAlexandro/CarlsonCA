@@ -24,9 +24,7 @@ define([
         },
         initialize: function () {
             this.render();
-            setTimeout(this.renderCarousel, 1000);
-            
-
+            //setTimeout(this.renderCarousel, 1000);
         }
     });
 });

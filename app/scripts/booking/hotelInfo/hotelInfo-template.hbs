@@ -28,6 +28,7 @@
       <div class="hotel-info-top-right col-sm-4">
          <div class="weather">
             <span>Current Weather:</span>
+            <img src="assets/img/weather.png" />
          </div>
          <div class="social">
             <span>Find us on:</span>
@@ -38,20 +39,14 @@
             </p>
          </div>
          <div class="tripadvisor">
-          <span>Current Weather:</span>
+          <span>Trip Advisor Ratings:</span>
             <div class="widSSPData">
-<div class="widSSPBranding">
-<dl>
-<dt>
-<a href="http://www.tripadvisor.com/" target="_blank"><img alt="TripAdvisor" src="http://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png"></a>
-</dt>
-<dt class="widSSPTagline">Book your best trip, every trip</dt> </dl>
-</div><!--/ cdsBranding-->
+
 <div class="widSSPComponent">
 <div class="widSSPSummary">
 <dl>
+  <a href="http://www.tripadvisor.com/" target="_blank"><img alt="TripAdvisor" src="http://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png"></a>
 <a onclick="ta.cds.handleTALink(11900,this);return true;" href="http://www.tripadvisor.com/Hotel_Review-g35805-d2042562-Reviews-Radisson_Blu_Aqua_Hotel-Chicago_Illinois.html" target="_blank">
-<dt class="widSSPH18">Radisson Blu Aqua Hotel</dt>
 </a>
 </dl>
 </div><!--/ cdsSummary-->
@@ -59,7 +54,7 @@
 <div class="widSSPComponent widSSPOptional">
 <div class="widSSPTrvlRtng">
 <dl>
-<dt class="widSSPH11">TripAdvisor Traveler Rating</dt> <dd>
+ <dd>
 <div class="widSSPOverall">
 <img class="rsImg" alt="4.5 of 5 stars" src="http://static.tacdn.com/img2/ratings/traveler/s4.5.gif">
 <div>Based on <b>3,168</b> traveler reviews</div>
@@ -72,20 +67,12 @@
 <dl class="widSSPReviews">
 <dt class="widSSPH11">Recent Traveler Review:</dt>
 <dd class="widSSPOneReview">
-<ul class="widSSPBullet">
-<li>
 <span class="widSSPDate">Feb 15, 2016:</span> <span class="widSSPQuote">“BEST PLACE TO STAY”</span>
-</li>
-</ul><!--/ bullet-->
 </dd><!--/ hReview-->
 </dl>
 </div>
-<div class="widSSPAll">
-<ul class="widSSPReadReview">
-<li><a onclick="ta.cds.handleTALink(11900,this);window.open(this.href, 'newTAWindow', 'toolbar=1,resizable=1,menubar=1,location=1,status=1,scrollbars=1,width=800,height=600'); return false" id="allreviews" href="http://www.tripadvisor.com/Hotel_Review-g35805-d2042562-Reviews-Radisson_Blu_Aqua_Hotel-Chicago_Illinois.html">Read reviews</a></li>
-</ul>
-</div><!--/ cdsAll-->
-<div class="widSSPLegal">&copy; 2016 TripAdvisor LLC</div><!--/ cdsLegal-->
+<a class="readmorebtn" onclick="ta.cds.handleTALink(11900,this);window.open(this.href, 'newTAWindow', 'toolbar=1,resizable=1,menubar=1,location=1,status=1,scrollbars=1,width=800,height=600'); return false" id="allreviews" href="http://www.tripadvisor.com/Hotel_Review-g35805-d2042562-Reviews-Radisson_Blu_Aqua_Hotel-Chicago_Illinois.html">Read More</a>
+
 </div>
          </div>
          <!--<div class="ataglance">
@@ -118,57 +105,113 @@
       </div>
    </div>
 </div>
-<section class="popular-destinations">
+
+<section class="popular-destinations ataglanceCurt hidden">
   <h2>At a Glance</h2>
   <div class="row destinations">
     <div class="col-md-4 destination col-xs-4">
-        <img src={{destinationImageLarge}}>
+        <img src="assets/img/glance-c-1.jpg">
         <div>
-          <h3>{{title}}</h3>
-          <p>{{description}}</p>
+          <h3>Title 1</h3>
+          <p>Description 1</p>
           <a href="#">Explore</a>
         </div>
       </div>
        <div class="col-md-4 col-xs-12">
         <div class="row">
-          <div class="col-md-6 destination col-xs-4">
-            <img src={{destImg.destinationImageSmall}}>
+          <div class="col-md-12 destination col-xs-4">
+            <img src="assets/img/glance-c-2.jpg">
             <div>
-              <h3>{{destTitle}}</h3>
-              <p>{{destDesc}}</p>
-              <a href="#">Explore</a>
-            </div>
-          </div>
-          <div class="col-md-6 destination col-xs-4">
-            <img src={{destImg.destinationImageSmall}}>
-            <div>
-              <h3>{{destTitle}}</h3>
-              <p>{{destDesc}}</p>
+              <h3>Title 4</h3>
+          <p>Description 4</p>
               <a href="#">Explore</a>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 destination col-xs-4">
-            <img src={{destImg.destinationImageMedium}}>
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-3.jpg">
             <div>
-              <h3>{{destTitle}}</h3>
-              <p>{{destDesc}}</p>
+              <h3>Title 2</h3>
+          <p>Description 2</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-4.jpg">
+            <div>
+              <h3>Title 3</h3>
+          <p>Description 3</p>
               <a href="#">Explore</a>
             </div>
           </div>
         </div>
+        
       </div>
       <div class="col-md-4 col-xs-4 destination">
-        <img src={{destImg.destinationImageLarge}}>
+        <img src="assets/img/glance-c-5.jpg">
         <div>
-          <h3>{{destTitle}}</h3>
-          <p>{{destDesc}}</p>
+          <h3>Title 5</h3>
+          <p>Description 5</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+
+  </div>
+  </section>
+  <section class="popular-destinations ataglanceAdriana">
+  <h2>At a Glance</h2>
+ <div class="row destinations">
+    <div class="col-md-4 destination col-xs-4">
+        <img src="assets/img/glance-c-1.jpg">
+        <div>
+          <h3>Title 1</h3>
+          <p>Description 1</p>
+          <a href="#">Explore</a>
+        </div>
+      </div>
+       <div class="col-md-4 col-xs-12">
+        <div class="row">
+          <div class="col-md-12 destination col-xs-4">
+            <img src="assets/img/glance-c-2.jpg">
+            <div>
+              <h3>Title 4</h3>
+          <p>Description 4</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-3.jpg">
+            <div>
+              <h3>Title 2</h3>
+          <p>Description 2</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+          <div class="col-md-6 destination col-xs-4">
+            <img src="assets/img/glance-c-4.jpg">
+            <div>
+              <h3>Title 3</h3>
+          <p>Description 3</p>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-4 col-xs-4 destination">
+        <img src="assets/img/glance-c-5.jpg">
+        <div>
+          <h3>Title 5</h3>
+          <p>Description 5</p>
           <a href="#">Explore</a>
         </div>
       </div>
   </div>
   </section>
+
 
 
 {{> mobileButtons}}

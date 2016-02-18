@@ -9386,10 +9386,30 @@ body.page-hotelInfo .page-header .main-wrapper {
 .page-header-cta .book-now-price {
   padding: 0px;
 }
+.page-header-cta .book-now-price span.from {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.page-header-cta .book-now-price .price {
+  font-size: 48px;
+  font-weight: 400;
+}
+.page-header-cta .book-now-price .time {
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  margin: 10px 0 0 0;
+}
+.page-header-cta .book-now-button a {
+  font-size: 20px;
+}
 .page-header-body h5 {
   background: #034EA0;
   display: inline-block;
-  font-size: 40px;
+  font-size: 35px;
   padding: 5px 20px;
   text-shadow: initial;
   margin-bottom: 20px;
@@ -9397,7 +9417,7 @@ body.page-hotelInfo .page-header .main-wrapper {
 .page-header-body h4 {
   background: #034EA0;
   display: inline-block;
-  font-size: 38px;
+  font-size: 35px;
   padding: 5px 20px;
   text-shadow: initial;
   font-weight: 300;
@@ -10843,6 +10863,7 @@ body.page-hotelInfo #content-page {
 }
 body.page-hotelInfo .page-header-body {
   bottom: 50px;
+  font-family: 'Lato', sans-serif;
 }
 body.page-hotelInfo .page-header-cta {
   bottom: 50px;
@@ -10856,6 +10877,7 @@ body.page-hotelInfo .readmorebtn {
   padding: 10px 20px;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  font-size: 14px;
 }
 body.page-hotelInfo .hotel-info-top,
 body.page-hotelInfo .hotel-info-bottom {
@@ -10886,6 +10908,13 @@ body.page-hotelInfo .hotel-info-top .hotel-info-top-right .social i {
   font-size: 2em;
   color: #00448E;
   margin-right: .5em;
+}
+body.page-hotelInfo .hotel-info-top .hotel-info-top-right .readmorebtn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
 }
 body.page-hotelInfo .hotel-info-top h1,
 body.page-hotelInfo .hotel-info-top h2,
