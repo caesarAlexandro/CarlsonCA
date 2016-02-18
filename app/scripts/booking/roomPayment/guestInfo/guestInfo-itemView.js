@@ -28,7 +28,7 @@ define([
         },
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
-        },       
+        },
         /**
          * @function validateFisrtName
          * @description Print true or false if  the $('#firstname') value match like a validate name

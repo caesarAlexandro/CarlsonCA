@@ -18,7 +18,7 @@
                 <article class="radio-list-block col-xs-4">
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-room-0" class="check" name=room {{#ifCond selectedRoom 'Guest' }} checked="true" {{/ifCond}}></input>
-                        <label for="radio-list-room-0" data-cover="assets/img/guest-room.jpg" data-cover-alt="Image for room"  data-cover-size="sm" class="cover">
+                        <label for="radio-list-room-0" data-cover="assets/img/room-guest.jpg" data-cover-alt="Image for room"  data-cover-size="sm" class="cover">
                             <div class="radio-list-overlay">
                                 <h4 class="title">Guest</h4>
 
@@ -33,7 +33,7 @@
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-room-1" class="check" name=room {{#ifCond selectedRoom 'Business' }} checked="true" {{/ifCond}}></input>
  
-                        <label for="radio-list-room-1" data-cover="assets/img/deluxe-room.jpg" data-cover-alt="Image for room"  data-cover-size="sm" class="cover">
+                        <label for="radio-list-room-1" data-cover="assets/img/room-business.jpg" data-cover-alt="Image for room"  data-cover-size="sm" class="cover">
 
                             <div class="radio-list-overlay">
                                 <h4 class="title">Business Class</h4>
@@ -73,7 +73,7 @@
                 <article class="radio-list-block col-xs-6">
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-arrangement-0" class="check" name=arrangement {{#ifCond selectedArrangement 'Standard' }} checked="true" {{/ifCond}}/>
-                        <label for="radio-list-arrangement-0" data-cover-alt="Image for bed" data-cover-size="sm" class="cover" style="background-color: #034EA0; border-right: 1px white solid;">
+                        <label for="radio-list-arrangement-0" data-cover="assets/img/arrangement-standard.jpg"  data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
                             <div class="radio-list-overlay" >
                                 <h4 class="title">Standard</h4>
                                 <div class="price" hidden>+$0</div>
@@ -85,7 +85,7 @@
                 <article class="radio-list-block col-xs-6">
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-arrangement-1" class="check" name=arrangement {{#ifCond selectedArrangement 'Corner' }} checked="true" {{/ifCond}} />
-                        <label for="radio-list-arrangement-1" data-cover-alt="Image for bed" data-cover-size="sm" class="cover" style="background-color: #034EA0; border-right: 1px white solid;">
+                        <label for="radio-list-arrangement-1"  data-cover="assets/img/arrangement-cover.jpg"   data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
                             <div class="radio-list-overlay">
                                 <h4 class="title">Corner</h4>
                                 <div class="price" hidden>+$15</div>
@@ -147,7 +147,7 @@
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-view-0" class="check" name=view {{#ifCond selectedView 'City' }} checked="true" {{/ifCond}}/>
                         {{#ifCond currentPage 'booking/guestInfo'}}
-                        <label for="radio-list-view-0" data-cover-alt="Image for bed" data-cover-size="sm" class="cover" style="background-color: #034EA0; border-right: 1px white solid;">
+                        <label for="radio-list-view-0" data-cover-alt="Image for bed" data-cover="assets/img/view-city.jpg" data-cover-size="sm" class="cover">
                             <div class="radio-list-overlay" >
                                 <h4 class="title">City View</h4>
                                 <div class="subtitle">Twice the comfort</div>
@@ -155,7 +155,7 @@
                             </div>
                         </label>
                         {{else}}
-                        <label for="radio-list-view-0" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
+                        <label for="radio-list-view-0" data-cover-alt="Image for bed" data-cover-size="sm" class="cover" data-cover="assets/img/view-city.jpg">
                             <div class="radio-list-overlay" {{#ifCond roomPreference.bed 'Double' }} selected {{/ifCond}}>
                                 <h4 class="title">City View</h4>
                                 <div class="subtitle">Twice the comfort</div>
@@ -181,7 +181,7 @@
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-view-1" class="check" name=view {{#ifCond selectedView 'Park' }} checked="true" {{/ifCond}} />
                     {{#ifCond currentPage 'booking/guestInfo'}}
-                        <label for="radio-list-view-1"  data-cover-alt="Image for bed" data-cover-size="sm" class="cover" style="background-color: #034EA0; border-left: 1px white solid;">
+                        <label for="radio-list-view-1"  data-cover-alt="Image for bed" data-cover-size="sm" class="cover" data-cover="assets/img/view-park.jpg">
                             <div class="radio-list-overlay">
                                 <h4 class="title">Park View</h4>
                                 <div class="subtitle">Personal heaven</div>
@@ -189,7 +189,7 @@
                             </div>
                         </label>
                         {{else}}
-                        <label for="radio-list-view-1" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
+                        <label for="radio-list-view-1" data-cover-alt="Image for bed" data-cover-size="sm" class="cover" data-cover="assets/img/view-park.jpg">
                             <div class="radio-list-overlay" {{#ifCond roomPreference.bed 'Queen' }} selected {{/ifCond}}>
                                 <h4 class="title">Park View</h4>
                                 <div class="subtitle">Personal heaven</div>
@@ -226,7 +226,7 @@
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-addon-0" class="check" name=addon {{#ifCond selectedAddOn 'Balcony' }} checked="true" {{/ifCond}}/>
                         
-                        <label for="radio-list-addon-0" data-cover="" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
+                        <label for="radio-list-addon-0" data-cover="assets/img/addon-balcony.jpg" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
                             <div class="radio-list-overlay" >
                                 <h4 class="title">Balcony</h4>
                                 <div class="price" hidden>+$0</div>
@@ -238,7 +238,7 @@
                 <article class="radio-list-block col-xs-4">
                     <div class="radio-list-body">
                         <input type="radio" id="radio-list-addon-1" class="check" name=addon {{#ifCond selectedAddOn 'Accesible' }} checked="true" {{/ifCond}} />
-                        <label for="radio-list-addon-1" data-cover="" data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
+                        <label for="radio-list-addon-1" data-cover="assets/img/addon-accesible.jpg"  data-cover-alt="Image for bed" data-cover-size="sm" class="cover">
                             <div class="radio-list-overlay">
                                 <h4 class="title">Accesible</h4>
                                 <div class="price" hidden>+$15</div>

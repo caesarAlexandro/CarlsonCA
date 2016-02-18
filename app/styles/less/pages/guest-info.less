@@ -9,36 +9,72 @@
 		//position: absolute;
 		//top: 120px;
 	}
+	.alertmsg{
+		background:#DAF1F9;
+		width: 100%;
+		line-height: 55px;
+		margin-bottom: 15px;
+		>div{
+			font-family: @font-family-lato;
+			padding: 0px;
+			span{
+				padding: 0px;
+			}
+			.actfast{
+				color:#002655;
+				i{
+					font-size: 30px;
+					position: relative;top: 5px;
+					margin-right: 10px;
+				}
+			}
+			.cancellation{
+				strong{
+					color:#218C00;
+				}
+			}
+			.closealert{
+				font-size: 12px;
+				text-align: right;
+				.cls{
+					font-size: 16px;
+				}
+			}
+		}
+	}
 	.welcomemsg{
-		background:#E9E9E9;
-		padding: 3em 0;
+		//background:#E9E9E9;
+		//padding: 3em 0;
 		margin: 0;
-
+		font-family: @font-family-lato;
 		h1{
 			font-family: @font-family-lato;
 			font-weight: 300;
 			color:#002855;
 			font-size: 40px;
 			margin: 0;
+			text-transform: initial;
 		}
 		p{
-			color:#fff;
-			font-family: @font-family-lato;
-			font-size: 1.2em;
+			//color:#fff;
+			
+			font-size: 16px;
 			margin: 0;
-   			width: 40%;
+   			//width: 40%;
 		}
 		.thanks{
-			width: 220px;
-			position: absolute;bottom: 15px;
+			//width: 220px;
+			//position: absolute;top: 15px;
 			right: 15px;
 			font-size: 1em;
 			text-align: right;
+			color:@brand-primary;
+			text-align: right;
 		}
 		>div{
-			background: #74C1DA;
+			//background: #74C1DA;
 			position: relative;
-			padding: 15px 20px 20px 20px;
+			padding: 0 0 20px 0px;
 		}
 	}
 	.ccrow{
@@ -129,6 +165,7 @@
 		}
 	}
 	.leftpanel {
+		
 		.summary-reservation{
 			font-size: 14px;
 			background: #F5F5F5;
@@ -234,6 +271,10 @@
 			background: #F5F5F5;
 			padding: 35px 30px;
 			margin: 25px 0;
+			a{
+				font-weight: bold;
+				cursor: pointer;
+			}
 			header{
 				padding: 0 0 25px 0;
 				margin: 0 0 25px 0;
@@ -251,11 +292,59 @@
 					margin-bottom: 70px;
 				}
 			}
+			.form-group{
+				label{
+					width: 30%;
+				}
+				input{
+					width: 69%;
+				}
+				
+			}
+			.formpolicy{
+				input{
+					display: inline-block;
+				}
+				.small{
+					clear: both;
+				}
+			}
 		}
 	}
 	.paymentpanel{
 		img{width: 100%;}
 	}
+	.linethrough{
+		text-decoration: line-through;
+	}
+	.rewardspanel{
+		.row{
+			margin-bottom: 15px;
+		}
+		.radio-list-block{
+			text-align: center;
+			>p{
+				margin: 10px 0;
+			}
+			>a{
+				display: block;
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: bold;
+				margin-top: 10px;
+			}
+			>span{
+				//display: block;
+				font-family: @font-family-sans-serif;
+			}
+			.btn-info{
+				background: #FFBF00;
+				border: 0px;
+				color:#333;
+			}
+		}
+	}
+	
 }
 .panel{
 	.panel-heading{

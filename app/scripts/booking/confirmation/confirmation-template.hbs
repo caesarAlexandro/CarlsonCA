@@ -1,81 +1,29 @@
-<section class="ribbon ribbon-success">
 
-
-
-        <div class="container">
-
-            <h4>
-				<i class="fa fa-check-circle-o icon-round icon-round-sm icon-inverse-success"></i> Thank you Curt!	
-			</h4>
-            <p>Confrimation Number: </p>
-            <p class="emailinfo"><span class="name">We’ve emailed your reservation details to </span> <strong class="email">{{email}}</strong></p>
-        </div>
-
-
-
-</section>
 
 <div class="container">
+    
     <div class="row">
-        <div id="menu-bar" class="col-xs-12">
-            <ul class="list-inline">
-                <li class="col-xs-6 col-sm-6 col-md-4">
-                    <a href="javascript:void(0)" class="btn btn-icon btn-block btn-primary">
-                        <div class="wrapper">
-                            <div class="icon-wrapper ">
-                                <i class="fa fa-coffee icon"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">Enhance your stay</div>
-                                <div class="subtitle">add breakfast, golf package and more!</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
+        <section class="ribbon ribbon-success col-md-12">
 
-                <li class="col-xs-6 col-sm-6 col-md-4">
-                    <a href="javascript:void(0)" class="btn btn-icon btn-block btn-primary">
-                        <div class="wrapper">
-                            <div class="icon-wrapper ">
-                                <i class="fa fa-list-ul icon"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">Upgrade your room</div>
-                                <div class="subtitle">starting at just $45 more per night</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
+            <h4>
+                <i class="fa fa-check-circle-o icon-round icon-round-sm icon-inverse-success"></i> Thank you Curt!  
+            </h4>
+            <div class="pullright confirmationnumber"><p>Confrimation Number: </p>
+            <p class="emailinfo"><span class="name">We’ve emailed your reservation details to </span> <strong class="email">{{email}}</strong></p></div>
 
-                <li class="col-xs-6 col-sm-6 col-md-4">
-                    <a href="javascript:void(0)" class="btn btn-icon btn-block btn-primary">
-                        <div class="wrapper">
-                            <div class="icon-wrapper ">
-                                <i class="fa fa-star icon"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">Earn points for this stay</div>
-                                <div class="subtitle">join Club Carlson & earn 5,000 pts</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
+    </section>
 
-                <!--<li class="col-xs-6 col-sm-6 col-md-3">
-                    <a href="javascript:void(0)" class="btn btn-icon btn-block btn-default">
-                        <div class="wrapper">
-                            <div class="icon-wrapper ">
-                                <i class="fa fa-bed icon"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">Make another reservation</div>
-                                <div class="subtitle">need to change or cancel?</div>
-                            </div>
-                        </div>
-                    </a>
-                </li>-->
-
-            </ul>
+      
+    </div>
+    <div class="row upsells">
+         <div class="col-md-4">
+            <img src="assets/img/promotions/upsell1.jpg" />
+        </div>
+         <div class="col-md-4">
+            <img src="assets/img/promotions/upsell2.jpg" />
+        </div>
+         <div class="col-md-4">
+            <img src="assets/img/promotions/upsell3.jpg" />
         </div>
     </div>
 
@@ -91,7 +39,14 @@
 
 
 
-            <ul class="list-inline col-xs-12 col-sm-4 col-md-3 pull-right  btn-icon-group">
+           
+
+        </section>
+
+    </section>-->
+
+    <div id="reservation-content" class="row">
+          <h3 class="">Your Reservation <ul class="list-inline col-xs-12 col-sm-4 col-md-3 pull-right  btn-icon-group">
 
 
 
@@ -100,9 +55,6 @@
                         <div class="wrapper">
                             <div class="icon-wrapper ">
                                 <i class="fa fa-mail-forward icon"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">send</div>
                             </div>
                         </div>
                     </a>
@@ -114,9 +66,6 @@
                             <div class="icon-wrapper ">
                                 <i class="fa fa-calendar icon"></i>
                             </div>
-                            <div class="content">
-                                <div class="title">add</div>
-                            </div>
                         </div>
                     </a>
                 </li>
@@ -126,9 +75,6 @@
                         <div class="wrapper">
                             <div class="icon-wrapper ">
                                 <i class="fa fa-print icon"></i>
-                            </div>
-                            <div class="content">
-                                <div class="title">print</div>
                             </div>
                         </div>
                     </a>
@@ -140,27 +86,25 @@
                             <div class="icon-wrapper ">
                                 <i class="fa fa-pencil icon"></i>
                             </div>
-                            <div class="content">
-                                <div class="title">modify</div>
-                            </div>
                         </div>
                     </a>
                 </li>
 
-            </ul>
-
-        </section>
-
-    </section>-->
-
-    <div id="reservation-content" class="row">
-          <h3 class="">Your Reservation</h3>
+            </ul></h3> 
         
             <div class="col-sm-7 col-xs-12" id="reservation-summary">
 
 
                 <section class="roominfosection">
                     <ul >
+                         <li href="javascript:void(0)">
+                            <div class="wrapper">
+                                <div class="content">
+                                    <span class="supratitle">Confirmation Number</span>
+                                    <span class="title">GPVCCK5</span>
+                                </div>
+                            </div>
+                        </li>
                          <li href="javascript:void(0)" >
                             <div class="wrapper">
 
@@ -193,14 +137,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li href="javascript:void(0)">
-                            <div class="wrapper">
-                                <div class="content">
-                                    <span class="supratitle">Confirmation Number</span>
-                                    <span class="title">GPVCCK5</span>
-                                </div>
-                            </div>
-                        </li>
+                       
                     </ul>
                 </section>
                 <section id="guest_info_section" class="guest-info-section">

@@ -143,6 +143,7 @@
              'click #completeReservation': 'makeReservation',
              'click .joinnow': 'openCarlsonClub',
              'click .closeform': 'openCarlsonClub',
+             'click .cls': 'closeAlert'
          },
          modelEvents: {
              'change': 'modelChanged'
@@ -156,8 +157,11 @@
              this.model.set({'zip': '12345'});
          },
          openCarlsonClub: function () {
-           $(".triangle").toggle();
-           $(".carlsonform").slideToggle(200);
+             $('.triangle').toggle();
+             $('.carlsonform').slideToggle(200);
+         },
+         closeAlert: function () {
+             $('.alertmsg ').hide(200);
          },
          setClientInfo: function() {
              var firstname = $('#firstname').val();
