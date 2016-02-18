@@ -11003,6 +11003,8 @@ body.page-hotelInfo .ataglance h5 ul {
 }
 .page-guestInfo .alertmsg > div .closealert .cls {
   font-size: 16px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 .page-guestInfo .welcomemsg {
   margin: 0;
@@ -11336,8 +11338,43 @@ body.page-hotelInfo .ataglance h5 ul {
 .page-confirmation #content-page {
   padding: 0px;
 }
+.page-confirmation .ribbon {
+  padding: 10px 30px;
+  margin-top: 15px;
+}
+.page-confirmation .ribbon.ribbon-success {
+  background: #E0ECBF;
+}
 .page-confirmation .ribbon h4 {
   float: left;
+  font-size: 30px;
+  color: #008C00;
+}
+.page-confirmation .ribbon h4 i {
+  color: #008C00;
+}
+.page-confirmation .socialactions {
+  padding: 0px;
+  margin-bottom: 15px;
+}
+.page-confirmation .socialactions > div {
+  padding: 0px;
+}
+.page-confirmation .socialactions .scl {
+  font-weight: 300;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.page-confirmation .socialactions i {
+  color: #999999;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 20px;
+  position: relative;
+  top: 3px;
+}
+.page-confirmation .socialactions .btn {
+  margin: 0px;
 }
 .page-confirmation .btn-icon {
   background: #034EA0;
@@ -11401,8 +11438,8 @@ body.page-hotelInfo .ataglance h5 ul {
 .page-confirmation .bottom-section {
   font-family: 'Lato', sans-serif;
 }
-.page-confirmation #reservation-summary {
-  bakground: #f5f5f5;
+.page-confirmation #reservation-summary > section {
+  background: #f5f5f5;
 }
 .page-confirmation #reservation-summary .roominfosection ul {
   list-style: none;
@@ -11411,10 +11448,12 @@ body.page-hotelInfo .ataglance h5 ul {
 }
 .page-confirmation #reservation-summary .roominfosection ul li {
   border-bottom: 1px solid #CCCCCC;
+  font-size: 14px;
+  padding: 15px;
 }
 .page-confirmation #reservation-summary .roominfosection ul .supratitle {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
 }
 .page-confirmation #menu-bar {
   padding: 0px;
@@ -11424,6 +11463,26 @@ body.page-hotelInfo .ataglance h5 ul {
 }
 .page-confirmation #menu-bar ul li:first-child {
   padding-left: 0px;
+}
+.page-confirmation .map-pane {
+  position: relative;
+}
+.page-confirmation .map-pane .map-info {
+  background: #034EA0;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  height: auto;
+  width: 200px;
+}
+.page-confirmation .map-pane .map-info .map-links li {
+  padding: 0px;
+}
+.page-confirmation .map-pane .map-info .map-links li a {
+  color: #fff;
 }
 /*	Components
 */
@@ -13355,6 +13414,9 @@ svg#tripadvisor path {
   font-size: 15px;
   font-weight: bold;
   margin-left: 25px;
+}
+.filters .facets .tripimg {
+  margin-bottom: 15px;
 }
 .btn-viewmore {
   background: #00A3D9;
