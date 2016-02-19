@@ -10221,9 +10221,6 @@ h3 {
 }
 /*	Pages
 */
-.page-guestInfo .navbar-toggle {
-  display: none !important;
-}
 body:not(.page-hotelList) #filter {
   display: none !important;
 }
@@ -10645,15 +10642,26 @@ body.page-hotelList #content,
     font-size: 12px;
   }
   #appContainer .headerinfo a {
-    padding: 0px;
+    font-size: 10px;
+    padding: 0 15px;
   }
   #appContainer .headerinfo .pull-right {
     margin-left: 0px;
     padding: 0px;
   }
+  #appContainer #modifySearch .top-search-pane li a {
+    line-height: initial;
+  }
+  #appContainer #modifySearch .top-search-pane span.btn-primary {
+    padding: 5px 10px;
+  }
   #appContainer .navbar-toggle {
     position: absolute;
     right: 0px;
+    border: 0px;
+  }
+  #appContainer .navbar-toggle i {
+    font-size: 36px;
   }
   #appContainer .nav.navbar-nav.pull-right {
     float: none !important;
@@ -10670,21 +10678,118 @@ body.page-hotelList #content,
     position: relative;
   }
   #appContainer #home-search #searchbar {
-    position: static;
     height: auto;
-    padding: 0;
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+  }
+  #appContainer #home-search .list-actions.list-selection #room-toggler.list-group-item i {
+    display: none;
+  }
+  #appContainer #home-search .list-actions.list-selection #findHotel.list-group-item {
+    line-height: 55px;
+  }
+  #appContainer .newsletter {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  #appContainer .newsletter .container .stay-connected {
+    display: none;
+  }
+  #appContainer .newsletter .formnl div p {
+    width: 100%;
+  }
+  #appContainer .newsletter .formnl input {
+    margin-top: 0px;
+  }
+  #appContainer #brand-footer header {
+    margin-bottom: 20px;
+  }
+  #appContainer #brand-footer header span {
+    display: block;
+  }
+  #appContainer #brand-footer .col-sm-8 {
+    width: 100%;
   }
   #appContainer .popular-destinations {
     padding: 0 15px;
   }
-  .page-guestInfo #content-page {
-    margin-top: 0px;
-  }
-  .page-hotelList .hotel-result .row div {
-    height: auto;
-  }
   .page-hotelList .hotel-result .row .hotel-result-image {
     height: 230px;
+  }
+  .page-hotelList .showfilters {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .page-hotelList .hotel-result-description,
+  .page-hotelList .hotel-type-description {
+    position: static;
+    color: #333;
+  }
+  .page-hotelList .hotel-result-description {
+    padding: 15px 0;
+  }
+  .page-hotelList .hoteldistance {
+    padding: 0 0 15px 0;
+  }
+  .page-hotelList .page-hotelList .hotel-result .row div {
+    height: inherit;
+  }
+  .page-hotelList .hotel-result-price-xs {
+    float: none;
+  }
+  .page-hotelList .hotel-result.single .hprice .hotel-result-price-xs span {
+    font-size: 25px;
+  }
+  .page-hotelList .hotel-result.single .gotodetails a {
+    left: 0px;
+  }
+  .page-hotelList .hotel-result.single .hotel-result-image {
+    padding: 0px;
+  }
+  .page-hotelList .hotel-result.single .hprice .from {
+    top: 0;
+  }
+  .page-hotelInfo .hotel-description {
+    position: static;
+    width: 100%;
+  }
+  body.page-guestInfo #content-page {
+    margin-top: 0px;
+  }
+  body.page-guestInfo .alertmsg {
+    line-height: initial !important;
+    padding: 10px 0 15px 0;
+    text-align: center;
+  }
+  body.page-guestInfo .radio-list-block:first-child {
+    padding-left: 8px;
+  }
+  body.page-guestInfo .guestinfopanel .carlsonform {
+    margin: 25px 0 0;
+    padding: 0;
+  }
+  body.page-guestInfo .guestinfopanel .carlsonform p:first-child {
+    margin-bottom: 15px;
+  }
+  body.page-guestInfo .guestinfopanel .carlsonform .form-group label,
+  body.page-guestInfo .guestinfopanel .carlsonform .form-group input {
+    width: 100%;
+  }
+  body.page-guestInfo .guestinfopanel .joinclub > div.pull-right {
+    float: none !important;
+  }
+  body.page-guestInfo .guestinfopanel .joinclub > div.pull-right div {
+    padding: 0 0 15px 0;
+    text-align: center;
+  }
+  body.page-guestInfo .paymentpanel img {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-hotelList .hotel-result.single .hprice .hotel-result-price-xs span {
+    font-size: 1.5em;
   }
 }
 .image-pane {

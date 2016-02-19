@@ -18,10 +18,15 @@ define([
             //'click .hotel-result' : 'hotelInformation',
             'click .gotodetails' : 'hotelInformation',
             'click #selectHotel' : 'hotelPayment',
-            'click .quickview' : 'quickView'
+            'click .quickview' : 'quickView',
+            'click .showfilters' : 'showFilters'
         },
         initialize : function () {
             bookingChannel = Backbone.Radio.channel('Booking');
+        },
+        showFilters : function () {
+            
+            $('.filters').show();
         },
         quickView : function () {
             $('.hotelsummary').slideToggle(200);
