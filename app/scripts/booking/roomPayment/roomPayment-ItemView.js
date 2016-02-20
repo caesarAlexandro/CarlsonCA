@@ -149,12 +149,19 @@
              'change': 'modelChanged'
          },
          setDefaultClientInfo: function() {
+             this.model.set({'title' : 'Mr'});
+             this.model.set({'middleName' : 'A'});
+             this.model.set({'address1' : '2202 Manor St'});
+             this.model.set({'address2' : ''});
+             this.model.set({'carlsonnumber' : '29812'});
              this.model.set({'firstName' : 'Curt'});
              this.model.set({'lastName' : 'Jackson'});
-             this.model.set({'email' : 'cj294@aol.com'});
-             this.model.set({'phoneNumber' : '5555555555'});
+             this.model.set({'email' : 'curtjackson@aol.com'});
+             this.model.set({'phoneNumber' : '555-232-1204'});
              this.model.set({'country' : 'United States'});
-             this.model.set({'zip': '12345'});
+             this.model.set({'ccard': '5555-1928-2030-8575'});
+             this.model.set({'month': '09'});
+             this.model.set({'year': '19'});
          },
          openCarlsonClub: function () {
              $('.triangle').toggle();
@@ -340,6 +347,7 @@
          },
          returningGuest: function() {
              var signedIn = $('#signOut');
+             $('.totalprice').appendTo('#modifySearch');
              if (signedIn.hasClass('hidden') == false) {
                  setTimeout(function() {
                      $('#returnGuest').removeClass('hidden');
@@ -366,6 +374,7 @@
          onRender: function() {
              Data.fullBg('[data-cover]');
              this.returningGuest();
+
          }
      });
  });

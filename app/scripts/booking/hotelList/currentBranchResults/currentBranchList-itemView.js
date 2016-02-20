@@ -25,7 +25,6 @@ define([
             bookingChannel = Backbone.Radio.channel('Booking');
         },
         showFilters : function () {
-            
             $('.filters').show();
         },
         quickView : function () {

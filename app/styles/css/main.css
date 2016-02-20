@@ -11106,6 +11106,18 @@ body.page-hotelInfo .ataglance h5 ul {
 .page-guestInfo #content-page {
   padding: 0px;
 }
+.page-guestInfo .totalprice {
+  position: relative;
+}
+.page-guestInfo .totalprice > div {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.page-guestInfo .totalprice > div strong {
+  fong-size: 26px;
+  color: #034EA0;
+}
 .page-guestInfo .alertmsg {
   background: #DAF1F9;
   width: 100%;
@@ -11484,8 +11496,17 @@ body.page-hotelInfo .ataglance h5 ul {
   font-size: 30px;
   color: #008C00;
 }
+.page-confirmation .ribbon h4 span {
+  position: relative;
+  top: -10px;
+}
 .page-confirmation .ribbon h4 i {
   color: #008C00;
+  font-size: 60px;
+  margin-right: 40px;
+}
+.page-confirmation .ribbon .confirmationnumber {
+  margin-top: 20px;
 }
 .page-confirmation .socialactions {
   padding: 0px;
@@ -11509,6 +11530,14 @@ body.page-hotelInfo .ataglance h5 ul {
 }
 .page-confirmation .socialactions .btn {
   margin: 0px;
+}
+.page-confirmation .socialactions .btn-bookagain {
+  border: 2px solid #034EA0;
+  background: none;
+  color: #034EA0;
+  font-size: 20px;
+  padding: 5px 30px;
+  text-transform: uppercase;
 }
 .page-confirmation .btn-icon {
   background: #034EA0;
@@ -11574,11 +11603,13 @@ body.page-hotelInfo .ataglance h5 ul {
 }
 .page-confirmation #reservation-summary > section {
   background: #f5f5f5;
+  font-size: 14px;
 }
 .page-confirmation #reservation-summary .roominfosection ul {
   list-style: none;
   overflow: hidden;
   padding: 0px;
+  margin: 0px;
 }
 .page-confirmation #reservation-summary .roominfosection ul li {
   border-bottom: 1px solid #CCCCCC;
@@ -11588,6 +11619,25 @@ body.page-hotelInfo .ataglance h5 ul {
 .page-confirmation #reservation-summary .roominfosection ul .supratitle {
   display: block;
   font-size: 16px;
+}
+.page-confirmation #reservation-summary .clubcarlsonmemb {
+  padding: 15px;
+}
+.page-confirmation #reservation-summary .clubcarlsonmemb h4 {
+  font-weight: 400;
+  font-size: 18px;
+  float: left;
+  text-transform: initial;
+  color: #034EA0;
+}
+.page-confirmation #reservation-summary .clubcarlsonmemb p {
+  clear: both;
+  margin-top: 20px;
+}
+.page-confirmation #reservation-summary .clubcarlsonmemb span.membnumber {
+  color: #034EA0;
+  background: #EAEAEA;
+  padding: 5px 15px;
 }
 .page-confirmation #menu-bar {
   padding: 0px;
@@ -13660,6 +13710,8 @@ svg#tripadvisor path {
 }
 .hotel-result.single .hotelsummary p {
   font-size: 13px;
+  height: 95px;
+  overflow: hidden;
 }
 .hotel-result.single .hotelsummary ul {
   font-size: 12px;

@@ -109,107 +109,170 @@
 <section class="popular-destinations ataglanceCurt hidden">
   <h2>At a Glance</h2>
   <div class="row destinations">
-    <div class="col-md-4 destination col-xs-4">
-        <img src="assets/img/glance-c-1.jpg">
-        <div>
-          <h3>Title 1</h3>
-          <p>Description 1</p>
-          <a href="#">Explore</a>
-        </div>
+      {{#with destination.[5]}}
+      <div class="col-md-4 destination col-xs-4">
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
       </div>
-       <div class="col-md-4 col-xs-12">
-        <div class="row">
-          <div class="col-md-12 destination col-xs-4">
-            <img src="assets/img/glance-c-2.jpg">
-            <div>
-              <h3>Title 4</h3>
-          <p>Description 4</p>
-              <a href="#">Explore</a>
+      {{/with}}
+      <div class="col-md-4 col-xs-12">
+         <div class="row">
+            {{#with destination.[6]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 destination col-xs-4">
-            <img src="assets/img/glance-c-3.jpg">
-            <div>
-              <h3>Title 2</h3>
-          <p>Description 2</p>
-              <a href="#">Explore</a>
+            {{/with}}
+            {{#with destination.[7]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
             </div>
-          </div>
-          <div class="col-md-6 destination col-xs-4">
-            <img src="assets/img/glance-c-4.jpg">
-            <div>
-              <h3>Title 3</h3>
-          <p>Description 3</p>
-              <a href="#">Explore</a>
+            {{/with}}
+         </div>
+         <!--<div class="row">
+            {{#with destination.[6]}}
+            <div class="col-md-12 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
             </div>
-          </div>
-        </div>
-        
+            {{/with}}
+         </div>-->
+         <div class="row">
+            {{#with destination.[3]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+            {{#with destination.[7]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>
       </div>
+      {{#with destination.[8]}}
       <div class="col-md-4 col-xs-4 destination">
-        <img src="assets/img/glance-c-5.jpg">
-        <div>
-          <h3>Title 5</h3>
-          <p>Description 5</p>
-          <a href="#">Explore</a>
-        </div>
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
       </div>
-
-  </div>
+      {{/with}} 
+   </div>
+</div>
   </section>
   <section class="popular-destinations ataglanceAdriana">
-  <h2>At a Glance</h2>
+  <h2>Just for you</h2>
  <div class="row destinations">
-    <div class="col-md-4 destination col-xs-4">
-        <img src="assets/img/glance-c-1.jpg">
-        <div>
-          <h3>Title 1</h3>
-          <p>Description 1</p>
-          <a href="#">Explore</a>
-        </div>
+      {{#with destination.[0]}}
+      <div class="col-md-4 destination col-xs-4">
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
       </div>
-       <div class="col-md-4 col-xs-12">
-        <div class="row">
-          <div class="col-md-12 destination col-xs-4">
-            <img src="assets/img/glance-c-2.jpg">
-            <div>
-              <h3>Title 4</h3>
-          <p>Description 4</p>
-              <a href="#">Explore</a>
+      {{/with}}
+      <div class="col-md-4 col-xs-12">
+         <div class="row">
+            {{#with destination.[1]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 destination col-xs-4">
-            <img src="assets/img/glance-c-3.jpg">
-            <div>
-              <h3>Title 2</h3>
-          <p>Description 2</p>
-              <a href="#">Explore</a>
+            {{/with}}
+            {{#with destination.[2]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
             </div>
-          </div>
-          <div class="col-md-6 destination col-xs-4">
-            <img src="assets/img/glance-c-4.jpg">
-            <div>
-              <h3>Title 3</h3>
-          <p>Description 3</p>
-              <a href="#">Explore</a>
+            {{/with}}
+         </div>
+         <div class="row">
+            {{#with destination.[3]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
             </div>
-          </div>
-        </div>
-        
+            {{/with}}
+            {{#with destination.[7]}}
+            <div class="col-md-6 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>`
+         <!--<div class="row">
+            {{#with destination.[7]}}
+            <div class="col-md-12 destination col-xs-4">
+               <img src={{destinationImageLarge}}>
+               <div>
+                  <h3>{{title}}</h3>
+                  <p>{{description}}</p>
+                  <a href="#">Explore</a>
+               </div>
+            </div>
+            {{/with}}
+         </div>-->
       </div>
+      {{#with destination.[4]}}
       <div class="col-md-4 col-xs-4 destination">
-        <img src="assets/img/glance-c-5.jpg">
-        <div>
-          <h3>Title 5</h3>
-          <p>Description 5</p>
-          <a href="#">Explore</a>
-        </div>
+         <img src={{destinationImageLarge}}>
+         <div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <a href="#">Explore</a>
+         </div>
       </div>
-  </div>
+      {{/with}} 
+   </div>
+</div>
   </section>
 
 
